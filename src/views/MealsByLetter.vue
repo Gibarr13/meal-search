@@ -25,5 +25,5 @@ watch(route, () => {
      </div>
      
 
-     <MEals :meals="meals"></MEals>
+     <Meals :meals="meals"></Meals>
 </template>
