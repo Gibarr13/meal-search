@@ -1,7 +1,7 @@
 <script setup>
 
 import { ref, onMounted, computed } from 'vue'
-import useAPI from '@/composables/useAPI';
+import useAPI from '@/composables/useAPI'
 
 const { api } = useAPI()
 
@@ -20,6 +20,7 @@ const searchIngredients = computed(() => {
 
     return ingredients.value.filter( (i) => i.strIngredient.toLowerCase().includes(keyword.value.toLowerCase()))
 })
+
 </script>
 <template>
   <div class="p-8 pb-0 text-orange-500">
